@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')             #decorator function that add route to application
 def Welcome_Page():
-    return "Hello World"
+   return render_template('index.html')  # Renders index.html with CSS
     
 @app.route('/homepage')
 def Home_Page():
@@ -23,6 +23,9 @@ def Carrer_Page():
 @app.route('/index')
 def index():
     return render_template('index.html')
+@app.route('/calculator')
+def calculator():
+    return render_template('calculator.html')
    
 
 if __name__ =="__main__":    #This represent entry point of the program and it is executed when we run this file as a main module.
