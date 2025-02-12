@@ -13,6 +13,7 @@ def Home_Page():
     return "Welcome to my homepage"
 
 if __name__ =="__main__":    #This represent entry point of the program and it is executed when we run this file as a main module.
+    debug = True             # Always set debug mode to true for development environment only and never in production environment.
     app.run()
 
 
