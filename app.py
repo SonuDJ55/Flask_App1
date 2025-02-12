@@ -11,17 +11,18 @@ def Welcome_Page():
 @app.route('/homepage')
 def Home_Page():
     return "Welcome to my homepage"
+
 @app.route('/redirect_to_homepage')
 def redirect_to_homepage():
     return redirect(url_for('Home_Page'))
+
 @app.route('/CarrerPage')
 def Carrer_Page():
     return "Welcome to my career page"
 
-@app.route()
+@app.route('/index')
 def index():
     return render_template('index.html')
-   
    
 
 if __name__ =="__main__":    #This represent entry point of the program and it is executed when we run this file as a main module.
